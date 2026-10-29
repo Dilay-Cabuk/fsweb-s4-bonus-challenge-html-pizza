@@ -1,26 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workintech + 🍕</title>
+
+    <title>Teknolojik Yemekler</title>
+
   </head>
 
   <body>
-    <div id="app">
-      <div>
-        <a href="https://github.com/Workintech/fsweb-s5-bonus-challenge-html-pizza" target="_blank">
-          <img src="./workintech.svg" class="logo" alt="Workintech logo">
-        </a>
-        <h1>Hello Coder!</h1>
-        <p class="read-the-docs">
-          Click on the Workintech logo to see the Readme of the project
-        </p>
+
+    <header class="container">
+      <img src="/assets/iteration-1/logo.svg" alt="Teknolojik Yemekler logosu">
+      <p>fırsatı kaçırma</p>
+      <h1>KOD ACIKTIRIR <br>
+        PİZZA DOYURUR</h1>
+      <button class="btn">ACIKTIM</button>
+    </header>
+    <section class="kategoriler">
+      <div class="alt-kategoriler">
+  <a href="">
+    <img src="/assets/iteration-2/icons/1.svg" alt="" class="kategori-ikon">
+    YENİ! Kore
+  </a>
+  <a href="">
+    <img src="/assets/iteration-2/icons/2.svg" alt="" class="kategori-ikon">
+    Pizza
+  </a>
+  <a href="">
+    <img src="/assets/iteration-2/icons/3.svg" alt="" class="kategori-ikon">
+    Burger
+  </a>
+    <a href="">
+      <img src="/assets/iteration-2/icons/4.svg" alt="" class="kategori-ikon">
+      Kızartmalar
+    </a>
+    <a href="">
+      <img src="/assets/iteration-2/icons/5.svg" alt="" class="kategori-ikon">
+      Fast food
+    </a>
+    <a href="">
+      <img src="/assets/iteration-2/icons/6.svg" alt="" class="kategori-ikon">
+    Gazlı içecek
+    </a>
       </div>
+    </section>
+    <section class="kampanyalar">
+      <article class="kart kart-1"> 
+        <h2>Özel <br> Lezzetus </h2>
+        <p>Position:Absolute Acı Burger</p>
+        <button class="btn">SİPARİŞ VER</button>
+      </article>
+      <article class="kart kart-2">
+        <h2>Hackathlon <br> Burger Menü</h2>
+        <button class="btn">SİPARİŞ VER</button>
+       </article>
+      <article class="kart kart-3"> 
+        <h2> <span class="kelime">Cooooook</span> hızlı <br> npm gibi kurye</h2>
+        <button class="btn">SİPARİŞ VER</button>
+      </article>
+    </section>
+
+    <section class="urunler">
+  <h3 class="urunler-ust-baslik">en çok paketlenen menüler</h3>
+  <h2 class="urunler-alt-baslik">Acıktıran Kodlara Doyuran Lezzetler</h2>
+
+  <div class="kategori-menu">
+    <a href="">
+      <img src="/assets/iteration-2/icons/1.svg" alt="Ramen" class="urun-kategori-ikon">
+      Ramen
+    </a>
+
+    <a href="" class="aktif-kategori">
+      <img src="/assets/iteration-2/icons/2.svg" alt="Pizza" class="urun-kategori-ikon">
+      Pizza
+    </a>
+
+    <a href="">
+      <img src="/assets/iteration-2/icons/3.svg" alt="Burger" class="urun-kategori-ikon">
+      Burger
+    </a>
+
+    <a href="">
+      <img src="/assets/iteration-2/icons/4.svg" alt="French fries" class="urun-kategori-ikon">
+      French fries
+    </a>
+
+    <a href="">
+      <img src="/assets/iteration-2/icons/5.svg" alt="Fast food" class="urun-kategori-ikon">
+      Fast food
+    </a>
+
+    <a href="">
+      <img src="/assets/iteration-2/icons/6.svg" alt="Soft drinks" class="urun-kategori-ikon">
+      Soft drinks
+    </a>
+  </div>
+  
+  <div class="urun-kartlari">
+    <article class="urun-kart">
+      <img src="/assets/iteration-2/pictures/food-1.png" alt="mısır ve mantar sevenler için pizza" class="urun-kart-foto">
+     <h3>Terminal Pizza</h3>
+     <div class="urun-bilgileri">
+      <p>4.9</p> 
+      <p>(200)</p>
+      <p><span class="fiyat">60₺</span></p>
     </div>
+    </article>
+      
+     <article class="urun-kart">
+     <img src="/assets/iteration-2/pictures/food-2.png" alt="acı sevenler için pizza" class="urun-kart-foto">
+      <h3>Position Absolute Acı Pizza</h3>
+      <div class="urun-bilgileri">
+      <p>4.9</p> 
+      <p>(200)</p>
+      <p><span class="fiyat">60₺</span></p>
+    </div>
+    </article>
+
+     <article class="urun-kart">
+      <img src="/assets/iteration-2/pictures/food-3.png" alt="bol malzemeli tavuk burger" class="urun-kart-foto">
+         <h3>useEffect Tavuklu Burger</h3>
+        <div class="urun-bilgileri">
+      <p>4.9</p> 
+      <p>(200)</p>
+      <p><span class="fiyat">60₺</span></p>
+     </div>
+    </article>
+  </div>
+</section>
   </body>
 
 </html>

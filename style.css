@@ -1,97 +1,242 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
+}
+
+header {  
+  
+  height: 600px;  
+  display: flex; 
+  flex-direction:column; 
+  align-items: center;  
+  justify-content: flex-start;
+  gap: 1rem; 
+  padding-top: 40px;
+  background: url('/assets/iteration-1/home-banner.png') center / cover;
+  background-color: #CE2829;  
+  background-repeat: no-repeat;
+   } 
+
+   header p {
+    color: #FDC913;
+    font-family: "Satisfy";
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+   }
+
+  header h1 {  
+  color: white; 
+  font-family: "Roboto Condensed";
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  
+  } 
+               
+header button {
+background-color: #FDC913;  
+border-radius: 50px; 
+color: #292929;
+padding: 12px 36px;
+width: 130px;
+border: none;
+}
+
+.kategoriler {
+  background-color: white;
+  padding: 16px 0;
+}
+
+.alt-kategoriler {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  gap: 24px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.alt-kategoriler a {
+  display: flex; 
+  align-items: center;
+  color: #292929;
+  text-decoration: none;
+  gap: 8px;
 }
 
-#app {
-  max-width: 1280px;
+.kategori-ikon {
+  width: 42px;
+  height: 42px;
+}
+
+.kampanyalar {
+  width: 80%;
+  display: grid;
   margin: 0 auto;
-  padding: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 150px;
+  gap: 8px;
+}
+
+.kart {
+  border-radius: 12px;
+  padding: 24px;
+  font-family: "Roboto Condensed";
+}
+
+.kart-1 {
+  grid-row: span 2;
+  background: url('/assets/iteration-2/cta/kart-1.png') center / cover;
+  font-size: 20px;
+}
+
+.kart-1 h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.kart-1 p {
+  margin-bottom: 16px;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.kart-2 {
+  background: url('/assets/iteration-2/cta/kart-2.png') center / cover;
+  font-size: 16px;
+}
+
+.kart-2 h2 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.kart-3 {
+  background: url('/assets/iteration-2/cta/kart-3.png') center / cover;
+  font-size: 16px;
+}
+
+.kart-3 h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+.kart-3 .kelime {
+  color: #CE2829;
+}
+.kart-1,
+.kart-2 {
+  color: white;
+}
+
+.kampanyalar .btn {
+  font-size: 12px;
+  background-color: white;
+  color: #CE2829;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.urunler {
+  background-color: #FAF7F2;
+  padding: 48px;
+}
+
+.urunler .urunler-ust-baslik {
+  font-family: "Satisfy";
+  font-size: 28px;
+  color: #CE2829;
+}
+
+.urunler-alt-baslik {
+  font-family: "Roboto Condensed";
+  font-size: 36px;
+  color: #292929;
+  font-weight: 600;
+}
+
+.urunler .urunler-ust-baslik,
+.urunler h2 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.kategori-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 32px 0;
 }
 
-.card {
-  padding: 2em;
+.kategori-menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:8px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #292929;
+  font-family: "Roboto Condensed";
 }
 
-.read-the-docs {
-  color: #888;
+.urun-kategori-ikon {
+  width: 40px;
+  height: 40px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.kategori-menu a.aktif-kategori  {
+  background-color: #292929;
+  color: white;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.urun-kartlari {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
 }
+
+.urun-kart {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px 20px;
+}
+
+.urun-kart-foto {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.urun-kart h3 {
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  font-weight: 600;
+  color: #292929;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.urun-bilgileri {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #5F5F5F;
+}
+
+.urun-bilgileri p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.urun-bilgileri .fiyat {
+  color: #292929;
+  font-weight: 700;
+}
+
