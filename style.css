@@ -1,47 +1,75 @@
+/* =========================
+   TEMEL AYARLAR
+========================= */
+
+:root {
+  --yellow: #FDC913;
+  --red: #CE2829;
+  --dark-gray: #292929;
+  --light-gray: #5F5F5F;
+  --beige: #FAF7F2;
+  --footer-bg: #1A1A1A;
+
+  --font-main: "Roboto Condensed", sans-serif;
+  --font-accent: "Satisfy", cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
 
-header {  
-  
-  height: 600px;  
-  display: flex; 
-  flex-direction:column; 
-  align-items: center;  
+/* =========================
+   HEADER
+========================= */
+
+header {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
-  gap: 1rem; 
+  gap: 1rem;
   padding-top: 40px;
   background: url('/assets/iteration-1/home-banner.png') center / cover;
-  background-color: #CE2829;  
+  background-color: var(--red);
   background-repeat: no-repeat;
-   } 
+}
 
-   header p {
-    color: #FDC913;
-    font-family: "Satisfy";
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
-   }
+header p {
+  color: var(--yellow);
+  font-family: var(--font-accent);
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
 
-  header h1 {  
-  color: white; 
-  font-family: "Roboto Condensed";
+header h1 {
+  color: white;
+  font-family: var(--font-main);
   font-size: 48px;
   font-weight: 300;
   text-align: center;
   margin: 0;
-  
-  } 
-               
-header button {
-background-color: #FDC913;  
-border-radius: 50px; 
-color: #292929;
-padding: 12px 36px;
-width: 130px;
-border: none;
 }
+
+header button {
+  background-color: var(--yellow);
+  border-radius: 50px;
+  color: var(--dark-gray);
+  padding: 12px 36px;
+  width: 130px;
+  border: none;
+}
+
+/* =========================
+   ÜST KATEGORİLER
+========================= */
 
 .kategoriler {
   background-color: white;
@@ -54,10 +82,10 @@ border: none;
   gap: 24px;
 }
 
-.alt-kategoriler a {
-  display: flex; 
+.alt-kategoriler span {
+  display: flex;
   align-items: center;
-  color: #292929;
+  color: var(--dark-gray);
   text-decoration: none;
   gap: 8px;
 }
@@ -66,6 +94,10 @@ border: none;
   width: 42px;
   height: 42px;
 }
+
+/* =========================
+   KAMPANYA KARTLARI
+========================= */
 
 .kampanyalar {
   width: 80%;
@@ -79,7 +111,7 @@ border: none;
 .kart {
   border-radius: 12px;
   padding: 24px;
-  font-family: "Roboto Condensed";
+  font-family: var(--font-main);
 }
 
 .kart-1 {
@@ -108,7 +140,7 @@ border: none;
 }
 
 .kart-2 h2 {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -122,9 +154,11 @@ border: none;
   margin-bottom: 12px;
   font-size: 20px;
 }
+
 .kart-3 .kelime {
-  color: #CE2829;
+  color: var(--red);
 }
+
 .kart-1,
 .kart-2 {
   color: white;
@@ -133,27 +167,31 @@ border: none;
 .kampanyalar .btn {
   font-size: 12px;
   background-color: white;
-  color: #CE2829;
+  color: var(--red);
   border-radius: 20px;
   padding: 10px 20px;
   border: none;
 }
 
+/* =========================
+   ÜRÜNLER BÖLÜMÜ
+========================= */
+
 .urunler {
-  background-color: #FAF7F2;
+  background-color: var(--beige);
   padding: 48px;
 }
 
 .urunler .urunler-ust-baslik {
-  font-family: "Satisfy";
+  font-family: var(--font-accent);
   font-size: 28px;
-  color: #CE2829;
+  color: var(--red);
 }
 
 .urunler-alt-baslik {
-  font-family: "Roboto Condensed";
+  font-family: var(--font-main);
   font-size: 36px;
-  color: #292929;
+  color: var(--dark-gray);
   font-weight: 600;
 }
 
@@ -161,6 +199,8 @@ border: none;
 .urunler h2 {
   text-align: center;
 }
+
+/* Ürün kategori menüsü */
 
 .kategori-menu {
   display: flex;
@@ -170,17 +210,17 @@ border: none;
   margin: 32px 0;
 }
 
-.kategori-menu a {
+.kategori-menu span {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:8px;
+  gap: 8px;
   background-color: white;
   border-radius: 50px;
   padding: 12px 20px;
   text-decoration: none;
-  color: #292929;
-  font-family: "Roboto Condensed";
+  color: var(--dark-gray);
+  font-family: var(--font-main);
 }
 
 .urun-kategori-ikon {
@@ -188,10 +228,12 @@ border: none;
   height: 40px;
 }
 
-.kategori-menu a.aktif-kategori  {
-  background-color: #292929;
+.kategori-menu span.aktif-kategori {
+  background-color: var(--dark-gray);
   color: white;
 }
+
+/* Ürün kartları */
 
 .urun-kartlari {
   display: grid;
@@ -214,10 +256,10 @@ border: none;
 }
 
 .urun-kart h3 {
-  font-family: "Roboto Condensed";
+  font-family: var(--font-main);
   font-size: 20px;
   font-weight: 600;
-  color: #292929;
+  color: var(--dark-gray);
   margin-top: 12px;
   margin-bottom: 16px;
 }
@@ -227,7 +269,7 @@ border: none;
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
-  color: #5F5F5F;
+  color: var(--light-gray);
 }
 
 .urun-bilgileri p {
@@ -236,7 +278,211 @@ border: none;
 }
 
 .urun-bilgileri .fiyat {
-  color: #292929;
+  color: var(--dark-gray);
   font-weight: 700;
 }
 
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: var(--footer-bg);
+  color: white;
+  padding: 48px;
+  font-family: var(--font-main);
+}
+
+.footer-icerik {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.iletisim-satiri {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.footer-ikon {
+  width: 24px;
+}
+
+.footer-menu {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.footer-instagram .instagram-gorseller {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.footer-alt {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #333333;
+  padding: 24px 0 0 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.twitter-ikon {
+  width: 20px;
+}
+
+/* =========================
+   MOBİL RESPONSIVE
+   600px ve altı
+========================= */
+
+@media (max-width: 600px) {
+
+  header {
+    height: 660px;
+    padding-top: 60px;
+    background-position: center bottom;
+  }
+
+  header img {
+    width: 250px;
+  }
+
+  header p {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 48px;
+    text-align: center;
+    max-width: 250px;
+    margin: 30px 0 0 0;
+  }
+
+  .alt-kategoriler {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px 16px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .kampanyalar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 12px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .kampanyalar .kart-1 {
+    height: 200px;
+    grid-row: auto;
+  }
+
+  .kampanyalar .kart-2,
+  .kampanyalar .kart-3 {
+    height: 160px;
+  }
+
+  .urunler {
+    padding: 32px 16px 32px 16px;
+  }
+
+  .kategori-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 12px;
+    width: 100%;
+  }
+
+  .urun-kartlari {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .urunler-alt-baslik {
+    font-size: 28px;
+    max-width: 250px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer {
+    padding: 40px 24px 40px 24px;
+  }
+
+  .footer-icerik {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    width: 100%;
+  }
+
+  .footer-menu {
+    width: 100%;
+    max-width: none;
+  }
+
+  .footer-alt {
+    width: 100%;
+  }
+}
+
+/* =========================
+   TABLET RESPONSIVE
+   601px - 1023px
+========================= */
+
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .kategori-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 12px;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 48px 24px;
+  }
+
+  .footer-icerik {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 32px;
+  }
+
+  .footer-instagram {
+    grid-column: span 2;
+  }
+
+  .footer-instagram .instagram-gorseller {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 300px;
+  }
+}
