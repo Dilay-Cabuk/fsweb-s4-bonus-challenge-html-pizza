@@ -1,83 +1,54 @@
-# Pizza Sipariş Formu - Tasarımdan Koda I
+# Pizza Restoranı Web Sayfası
 
-Bu proje, Workintech Full Stack Web Geliştirme eğitimindeki S8 sunuma hazırlık olarak, HTML ve CSS becerilerini geliştirmeniz için tasarlanmıştır. Bu projede, sadece HTML ve CSS kullanarak verilen tasarımı aynen uygulamanız beklenmektedir. Figma tasarım dosyasını referans alarak, sayfanızın görsel yapısını oluşturun.
+Workintech Full Stack Web Geliştirme eğitimi kapsamında, verilen Figma tasarımını referans alarak HTML ve CSS ile bir pizza restoranı için tanıtım sayfası geliştirdim. Sayfanın düzenini mobil ve masaüstü ekranlara uyarladım.
 
-**Amaç:**
+## Proje Özellikleri
 
-- Verilen Figma tasarımına birebir uyan, mobil ve desktop uyumlu statik bir HTML yapısı oluşturmak.
-- CSS kullanarak formu ve sayfayı şekillendirmek.
-- JavaScript kullanmadan temel bir form yapısı oluşturmak.
+- HTML ve CSS ile geliştirilen statik restoran tanıtım sayfası
+- Mobil ve masaüstü ekranlara uyumlu sayfa düzeni
+- Figma tasarımından koda aktarılan renk paleti, tipografi ve görseller
 
-**Gereksinimler:**
+## Kurulum ve Çalıştırma
 
-- Visual Studio Code
-- Node.js ve npm (Node Package Manager) bilgisayarınızda kurulu olmalıdır. Eğer kurulu değilse, [Node.js resmi web sitesinden](https://nodejs.org) LTS versiyonunu indirebilirsiniz.
+Projeyi yerel ortamda çalıştırmak için [Node.js](https://nodejs.org/) ve npm gerekir.
 
-**Başlangıç:**
+```sh
+git clone https://github.com/Dilay-Cabuk/fsweb-s4-bonus-challenge-html-pizza.git
+cd fsweb-s4-bonus-challenge-html-pizza
+npm install
+npm run dev
+```
 
-1. **Create Repo From Template & Clone:**
+Komutları çalıştırdıktan sonra terminalde gösterilen yerel adresi tarayıcıda açın.
 
-   - Sağ üstteki yeşil "Use this template" butonu ile, bir kopya oluşturun. işlemi tamamlandıktan sonra, kendi GitHub hesabınızda yer alan depo bağlantısını kopyalayın.
-   - VS Code'u açın ve terminali başlatın. Aşağıdaki komutu kullanarak depoyu bilgisayarınıza klonlayın:
-     ```sh
-     git clone <Yeni-Repo-URL'niz>
-     ```
-   - Örnek:
-     ```sh
-     git clone https://github.com/sizin-hesabiniz/fsweb-s5-bonus-challenge-html-pizza
-     ```
+## Proje Yapısı
 
-2. **VS Code'da Geliştirmeye Başlamak:**
-   - VS Code'u açın ve `File -> Open Folder` seçeneğiyle projeyi açın.
+| Dosya veya klasör | İçerik |
+| --- | --- |
+| `index.html` | Sayfanın HTML yapısı |
+| `style.css` | Sayfanın stilleri ve ekran boyutlarına göre düzeni |
+| `public/` | Projede kullanılan görseller ve diğer statik dosyalar |
+| `package.json` | Proje ayarları ve geliştirme komutları |
 
-- Terminalde aşağıdaki komutları sırasıyla çalıştırarak proje bağımlılıklarını yükleyin ve projeyi başlatın:
-  ```sh
-  npm install
-  npm run dev
-  ```
+## Tasarım
 
-3. **Geliştirmeye Başlayın** 🤓 👩‍💻 🧑‍💻
+**Renk paleti**
 
-#### Proje Yapısı
+| Renk | Kod |
+| --- | --- |
+| Sarı | `#FDC913` |
+| Açık gri | `#5F5F5F` |
+| Koyu gri | `#292929` |
+| Kırmızı | `#CE2829` |
+| Bej | `#FAF7F2` |
 
-- `index.html`: Ana HTML dosyanız.
-- `style.css`: Tüm stillerinizin bulunduğu CSS dosyası.
-- `assets/`: Projede kullanacağınız tüm resim ve diğer statik dosyalar sizin için önden dışarı aktarıldı.
-- `index.html` dosyasını düzenleyerek HTML yapısını oluşturun.
-- Figma tasarımını ([S6 Pizza v2.1 Mobil](https://www.figma.com/design/B6rGWNjWqVyvuB9htLyIMR/S6-Challange-v2.1?node-id=0-1&t=FwsCbqkh8NWchoPX-1))
--  referans alarak CSS (`style.css`) ile sayfayı ve formu şekillendirin.
-
-#### Renk Kodları
-
-1. Sarı #FDC913
-2. Açık Gri: #5F5F5F
-3. Koyu Gri #292929
-4. Kırmızı #CE2829
-5. Bej: #FAF7F2
-
-#### Tasarımda Kullanılan Fontlar
-
-Logo proje klasöründe SVG olarak yüklü
+**Tasarımda kullanılan yazı tipleri**
 
 - [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed)
 - [Barlow](https://fonts.google.com/specimen/Barlow)
 - [Quattrocento](https://fonts.google.com/specimen/Quattrocento)
 - [Satisfy](https://fonts.google.com/specimen/Satisfy)
 
-**Önemli Notlar:**
+**Tasarım referansı**
 
-- Bu projede JavaScript kullanmayacaksınız. Form işlevsel olmayacak, sadece statik olarak geliştirilecek.
-- Figma tasarımına sadık kalarak mobil ve masaüstü ekranlarda, düzgün dengeli bir görünüm sağlamayı hedefleyin.
-- HTML yapınızın anlamsal (semantic) olmasına özen gösterin.
-- CSS'te class isimlendirmesi ve kod düzenine dikkat edin.
-
-**Kaynaklar:**
-
-- **Figma Tasarımı:** ([S6 Pizza v2.1 Mobil](https://www.figma.com/design/B6rGWNjWqVyvuB9htLyIMR/S6-Challange-v2.1?node-id=0-1&t=FwsCbqkh8NWchoPX-1))
-- **CSS içerisinde değişken tanımlayıp, yeniden kullanabilmek:** [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
-
-## Sorularınız mı Var?
-
-Eğer herhangi bir sorunla karşılaşırsanız, lütfen eğitmeninize başvurun.
-
-İyi eğlenceler ve kodlamalar! 🍕
+- [Workintech Pizza Figma tasarımı](https://www.figma.com/design/B6rGWNjWqVyvuB9htLyIMR/S6-Challange-v2.1?node-id=0-1&t=FwsCbqkh8NWchoPX-1)
